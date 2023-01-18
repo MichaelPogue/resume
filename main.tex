@@ -1,0 +1,211 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Document Setup
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,11pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[english]{babel} %Language support
+\usepackage[utf8]{inputenc} %Encoding
+\usepackage{blindtext} %Test text
+\usepackage{url} %URL support
+\usepackage[usenames,dvipsnames]{xcolor} %color support
+\usepackage[scale=0.9]{geometry} 
+\usepackage{enumitem} %improve lists
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{amsmath} %support math
+\usepackage{xcolor} %Support for different colored text.
+\usepackage{tabularx} %tabularx environment
+\usepackage{geometry} %Support for geometry functions.
+\usepackage{fancyhdr} %Support for advanced header/footer layout.
+\usepackage{xcolor}
+\usepackage{ifetex}
+\usepackage{parskip}
+\usepackage{fontawesome5} %for social media icons
+\usepackage{supertabular}
+\usepackage[unicode, draft=false]{hyperref} %Hyperlink support
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Setup Commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Intro setup.
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+% Hyperlink color
+\definecolor{linkcolour}{rgb}{0.55,0.08,0.25} % Cadmium Orange{0.99,0.55,0.19}  Claret{0.55,0.08,0.25}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour}
+
+%Clear empty pages
+\let\cleardoublepage\clearpage
+
+% Setup footnote.
+\newcommand\textline[4][t]{%
+  \vfill\color{lightgray}\par\smallskip\noindent\parbox[#1]{.333\textwidth}{\raggedright\text{}#2}%
+  \parbox[#1]{.333\textwidth}{\centering#3}%
+  \parbox[#1]{.333\textwidth}{\raggedleft\text{#4}}\par\smallskip%
+}
+
+%Document start
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Intro
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{empty} 
+\begin{tabularx}{\linewidth}{@{} C @{}}
+    \Huge{Michael Pogue} \\[7.5pt]
+    \href{https://github.com/MichaelPogue}{\raisebox{-0.05\height}\faGithub\ MichaelPogue} \ $|$ \ 
+    \href{https://linkedin.com/in/mrpogue}{\raisebox{-0.05\height}\faLinkedin\ mrpogue} \ $|$ \ 
+%    \href{https://website.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
+    \href{mailto:mrpogue@outlook.com}{\raisebox{-0.05\height}\faEnvelope \ mrpogue@outlook.com} \ $|$ \ 
+    \href{tel:+15734163889}{\raisebox{-0.05\height}\faMobile \ +1(573)416-3889} \\
+\end{tabularx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Environments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{Section}[1]{ 
+  \sectionskip
+  \MakeUppercase{{\bf #1}} 
+  \sectionlineskip
+  \vspace{0.1em}
+  \hrule
+  \begin{list}{}{\setlength{\leftmargin}{0em}}
+  \item[]
+  }{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objective
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Section}{OBJECTIVE}
+    {Data Analyst set to graduated with a Master's in Data Analytics from Northwestern State University mid 2023. Looking for work as a Data/Business Analyst.}
+\end{Section}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Section}{Education}
+    {\bf Master of Data Analytics}, Northwestern State University \hfill {Expected Apr 2023} \\
+    {\bf Bachelor of Science in Biology}, Columbia College \hfill {2016 - 2021}   
+\end{Section}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Section}{Skills}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+        Technical Skills & EXCEL, SQL, Oracle, Power BI, Tableau, Statistics, Python, Matplotlib, Visio, \LaTeX\\
+        Soft Skills & Avid learner, continuous improvement, organized, attention to detail, \& team work.\\
+    \end{tabular}\\
+\end{Section}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Section}{EXPERIENCE}
+    \textbf{Biotech Assistant Scientist} \hfill Mar 2021 - Present\\
+    Eurofins \hfill \textit{Columbia, MO}
+        \begin{itemize}
+            \itemsep -3pt {} 
+                \item {Coordinated and performed analytical tests to comply with established standards and specifications}
+                \item {Developed laboratory testing programs and data analysis while adhering to protocols, methods, SOPs, batch records and work instructions.}
+                \item {Created scientific reports using EXCEL and Empower to display analytical results in a clear and organized format.}
+                \item {Performed technical laboratory functions in compliance with regulatory agencies and safety requirements. Agencies such as: FDA, DEA, EPA, and CDER.}
+                \item {Used Microsoft Word and EXCEL to create methods, controlled forms, and controlled spreadsheets to preform analytical testing, store verified data for analysis, and for data trending.}
+                \item {COUPA Specialist: Responsible for ordering supplies for personal team and others, orders ranging from several hundreds to tens of thousands of dollars.}
+         \end{itemize}
+
+    \textbf{Student/Security Guard} \hfill Aug 2016 - Feb 2021\\
+    Columbia College \hfill \textit{Columbia, MO}
+        \begin{itemize}
+            \itemsep -3pt {} 
+                \item {Aided in establishing Columbia College as the nation's top 3 most secure campuses in the US.}
+                \item {Documented safety and security incidents using preset guidelines and methods.}
+                \item {Conducted regular campus security patrols and handled all incidents promptly to maintain overall safety for staff, students, and visitors.}
+                 \item {Supervised staff and other security personnel and provided procedural and situational guidance.}
+         \end{itemize}
+
+    \textbf{Emergency and Behavioral Health Technician} \hfill Jan 2012 - Jul 2016\\
+    SSM Health \hfill \textit{Jefferson City, MO}
+        \begin{itemize}
+            \itemsep -3pt {} 
+                \item {Performed client intake procedures according to internal standards for all admissions.}
+                \item {Maintained accurate documentation in electronic medical records.}
+                \item {Assisted staff with providing excellent care and lifesaving measures to patients.}
+                \item {Routinely evaluated patient vital signs and status to determine care needs.}
+         \end{itemize}
+\end{Section} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{Section}{Projects}
+    \textbf{YouTube Data Scrape}
+        \begin{itemize}
+            \itemsep -3pt {} 
+                \item {Used Python and Google's APIs download and process data from individual channels \& then save the data to CSV files. Power BI was later used to create presentations using trending data.}
+        \end{itemize}
+\end{Section}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Footnote
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textline[t]{\today}{Michael Pogue~~~·~~~Résumé}{1}
+
+\end{document}
+
+\noindent Left longer sample simple text\hfill Center?\hfill Right
+
+\noindent\textbox{Left longer sample text\hfill}\textbox{\hfil Center\hfil}\textbox{\hfill Right}
+
+\noindent
+
+
+
+
+
+
+
+
+\vspace*{\fill}
+  \hspace*{\fill} Michael Pogue~~~·~~~Résumé\hspace*{\fill}\\
+  \hspace*{\fill} Michael Pogue~~~·~~~Résumé\hspace*{\fill}
+  \raggedleft{\footnotesize \footnotesize{Updated \today}}
+
+
+
+
+\vfill
+\begin{center}
+    test
+\end{center} \raggedleft{\footnotesize \footnotesize{Last updated: \today}}
+
+Project template 
+\begin{Section}{PROJECTS}
+    \vspace{-1.25em}
+    \item \textbf{YouTube Data Scrape.} {Insert Project Details!!! \href{website?}{(See here)}}
+\end{Section} 
+
+Experience tempalte
+    \textbf{Role} \hfill Jan 2022 - Jan 2022\\
+    Company \hfill \textit{City, MO}
+     \begin{itemize}
+        \itemsep -3pt {} 
+            \item {}
+            \item {}
+            \item {}
+             \item {}
+     \end{itemize}
+
